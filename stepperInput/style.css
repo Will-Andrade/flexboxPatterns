@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.stepper-container {
+    display: flex;
+}
+
+.stepper-input {
+    border-right: 0;
+    border-left: 0;
+    width: 200px;
+    text-align: center;
+}
+
+.input {
+    border: 1px solid #D7DBDD;
+    padding: 0 10px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.button {
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #4bebe4;
+    font-size: 12px;
+    border: 1px solid #16A2D7;
+    border-radius: 5px;
+}
+
+.button-left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button-right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
