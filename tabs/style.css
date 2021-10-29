@@ -3,3 +3,24 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: sans-serif;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #D7DBDD;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #16A2D7;
+    border-bottom: 2px solid transparent;
+}
+
+.is-tab-selected {
+    border-bottom: 2px solid #4EBBE4;
+}
