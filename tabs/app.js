@@ -1,14 +1,15 @@
 const tabContainer = document.querySelector('.tabs');
 const availableTabs = document.querySelectorAll("[data-tab]");
 
-tabContainer.addEventListener("click", e => {
-    const clickedOnATab = e.target.dataset.tab;
+const clearSelectedItem = ({ classList }) => classList
+    .remove("is-tab-selected");
 
+const containerClickHandler = ({ target }) => {
+    const clickedOnATab = target.dataset.tab;
     if (clickedOnATab) {
-        availableTabs.forEach(tab => {
-            tab.classList.remove("is-tab-selected");
-        })
-
-        e.target.classList.add("is-tab-selected");
+        availableTabs.forEach(clearSelectedItem);
+        target.classList.add("is-tab-selected");
     }
-})
+}
+
+tabContainer.addEventListener("click", containerClickHandler);
